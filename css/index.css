@@ -1,3 +1,11 @@
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+.box-width {
+  width: 100%;
+  padding: 2% 0;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -185,6 +193,9 @@ p {
   font-size: 2rem;
   text-decoration: none;
 }
+.navigation .nav a:hover {
+  color: silver;
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
@@ -197,7 +208,7 @@ footer {
 }
 .home .intro .banner {
   width: 100%;
-  margin: 2% 0;
+  padding: 2% 0;
 }
 .home .intro .banner img {
   border-radius: 10px;
@@ -243,6 +254,15 @@ footer {
 }
 .home .walk .walk-text p {
   margin-bottom: 26px;
+}
+.home .walk .walk-text .btn {
+  width: 30%;
+  color: white;
+  background: #23293B;
+  padding: 8px;
+  font-size: 2rem;
+  text-align: center;
+  border-radius: 5px;
 }
 .home .walk .walk-img {
   width: 46%;
