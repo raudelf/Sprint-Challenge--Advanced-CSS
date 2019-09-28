@@ -1,9 +1,9 @@
 // Mixins Here
-.flex-box(@justify, @align, @direction, @wrap) {
+.flex-box(@justify, @direction) {
     display: flex;
-    flex-flow: @direction @wrap;
+    flex-direction: @direction;
     justify-content: @justify;
-    align-items: @align;
+    width: 100%;
 }
 
 .flex-column {
