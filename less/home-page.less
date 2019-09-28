@@ -88,8 +88,13 @@
         }
 
         @media @phone {
-          .sign-up(100%, white, @ebony-clay, 10px);
+          .sign-up(100%, white, @ebony-clay, 20px);
+          width: 100;
         }
+      }
+
+      @media @phone {
+        .box-width();
       }
     }
 
@@ -101,11 +106,24 @@
         width: 100%;
         height: auto;
         border-radius: 10px;
+
+        @media @phone {
+          .box-width();
+          border-radius: 25px;
+        }
       }
 
       @media @phone{
-        order: 1;
+        width: 100%;
+        margin: 0 auto;
+        border-radius: 10px;
+        order: -1;
       }
+    }
+
+    @media @phone {
+      .flex-box(center, column);
+      padding: 0 2%;      
     }
   }
 }// home
