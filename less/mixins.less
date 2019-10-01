@@ -1,1 +1,32 @@
 // Mixins Here
+.flex-box(@justify, @direction) {
+    display: flex;
+    flex-direction: @direction;
+    justify-content: @justify;
+    width: 100%;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.box-width {
+    width: 100%;
+    padding: 2% 0;
+}
+
+.sign-up (@width, @color, @bg, @padding){
+    width: @width;
+    color: @color;
+    background: @bg;
+    padding: @padding;
+    font-size: 2rem;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.sign-up-hover (@color, @bg) {
+    color: @color;
+    background: @bg;
+}
